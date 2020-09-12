@@ -1,9 +1,191 @@
+/* GENERAL */ 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  .menu-container {
-      display: flex;
+  body { 
+    background: #c6c6ba;
+    border: #232017 solid 20px;
+
   }
+
+  img { 
+    max-width: 100%; 
+    height: auto;
+    }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+    
+/* WINGS */
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+  .left-col {
+    width: 50%;
+  }
+
+
+  .right-col {
+    width: 50%;
+  }
+  
+  .left-wing {
+    width: 100%;
+    position: relative;
+    left: -5%;
+    z-index: -1;
+    animation: slide-left 2s;
+    animation-fill-mode: both;
+  }
+
+  .right-wing {
+    width: 100%;
+    position: relative;
+    right: 12%;
+    animation: slide-right 2s;
+  }
+
+
+@keyframes slide-right{
+    0% {
+      margin-left: 20%;
+      opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+  
+    100% {
+      margin-left: 0%;
+      opacity: 1;
+    }
+  }
+
+@keyframes slide-left {
+    0% {
+        margin-left: -20%;
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+/* LOGO */
+
+.logo-container {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-top: -8%;
+    animation: fadeIn 4s;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
+
+ /* TEXT-AREA */
+
+ h2 {
+     text-transform: uppercase;
+     font-weight: 500;
+     font-size: 100px;
+ }
+
+ h3 {
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 60px;
+ }
+
+ .new-album-container {
+     display: flex;
+     justify-content: space-around;
+     margin-left: 50px;
+ }
+
+ .new-album {
+    font-size: 50px;
+    font-family: 'Special Elite', cursive;
+    display: flex;
+    justify-content: flex-start;
+    width: 800px;
+ }
+
+ .bad-taste-container {
+     display: flex;
+     justify-content: center;
+     margin-top: 1rem;
+     margin-bottom: -20px;
+ }
+ .bad-taste {
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+    width: 800px;
+ }
+
+ .large-text-area {
+     display: block;
+     text-align: center;
+     font-family: 'Solway', serif;
+     font-weight: 800 !important;
+     letter-spacing: -0.2em;
+ }
+
+.special-guests {
+    margin-top: -20px;
+}
+
+ .mum {
+     display: inline-block;
+     height: 100px !important;
+     padding-left: 1rem;
+ }
+
+ footer {
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+ }
+
+ .left-footer {
+     display: flex;
+     padding-left: 1rem;
+ }
+
+ .right-footer {
+     display: flex;
+     padding-right: 1rem;
+ }
+
+ .bottom-graphic {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    margin-bottom: -20px;
+    text-align: center;
+}
