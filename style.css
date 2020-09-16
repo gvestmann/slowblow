@@ -110,13 +110,15 @@ header {
  h2 {
      text-transform: uppercase;
      font-weight: 500;
-     font-size: 100px;
+    /* font-size: 100px; */
+     font-size: 7vw;
  }
 
  h3 {
      text-transform: uppercase;
      font-weight: 600;
-     font-size: 60px;
+     /*font-size: 60px;*/
+     font-size: 4vw;
  }
 
  .new-album-container {
@@ -126,7 +128,8 @@ header {
  }
 
  .new-album {
-    font-size: 50px;
+    /*font-size: 50px;*/
+    font-size: 4vw;
     font-family: 'Special Elite', cursive;
     display: flex;
     justify-content: flex-start;
@@ -139,11 +142,19 @@ header {
      margin-top: 1rem;
      margin-bottom: -20px;
  }
+
  .bad-taste {
     font-family: 'Parisienne', cursive;
     font-size: 30px;
     width: 800px;
  }
+
+ @media only screen and (max-width: 900px) {
+  .bad-taste {
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
 
  .large-text-area {
      display: block;
@@ -161,7 +172,16 @@ header {
      display: inline-block;
      height: 100px !important;
      padding-left: 1rem;
- }
+     max-width: ;
+ } 
+
+@media only screen and (max-width: 900px) {
+  .mum {
+        max-height: 50px;
+      }
+    }
+
+ /* FOOTER */
 
  footer {
     font-family: 'Special Elite', cursive;
@@ -171,6 +191,12 @@ header {
     margin-bottom: 1rem;
     margin-top: 1rem;
  }
+
+@media only screen and (max-width: 900px) {
+  footer {
+        font-size: 16px;
+      }
+    }
 
  .left-footer {
      display: flex;
@@ -189,3 +215,9 @@ header {
     margin-bottom: -20px;
     text-align: center;
 }
+
+@media only screen and (max-width: 900px) {
+  .bottom-graphic {
+        max-height: 300px;
+      }
+    }

@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <meta charset='UTF-8'/>
+    <!-- Basic metatags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Slowblow - ný plata. útgáfutónleikar í Bæjarbíó 28. & 29. ágúst." />
+    <meta name="robots" content="follow, index" />
     <title>SLOWBLOW | útgáfutónleikar</title>
+    <!-- Ref. to CSS and fonts -->
     <link rel='stylesheet' href='style.css'/>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Solway:wght@500;700;800&display=swap" rel="stylesheet">
     <body>
-
-    <!-- A cage for the wings (pun intended) (55% af heildarsídd) -->
+    <!-- A cage for the wings (pun intended) (roughly 55% percent of poster's height, flexbox) -->
     <header>
-
-      <!-- Container for left image -->
+      <!-- Container for the left-wing -->
       <div class="left-col">
+        <!-- Image-class for position and animation -->
         <img class="left-wing" src="images/left-wing.png">
       </div>
-
-      <!-- Container for right image -->
+      <!-- Container for right-wing -->
       <div class="right-col">
+        <!-- Another, very similar image-class -->
         <img class="right-wing" src="images/right-wing.png">
       </div>
-
     </header>
-    
     <main>
-
+      <!-- Wrapper for text and logos -->
       <div class="logo-container">
         <img title="Slowblow" alt="Slowblow's logo" src="images/slowblow-logo.png">
       </div>
-
+      <!-- Container, flexbox -->
       <div class="new-album-container">
+        <!-- Class for stylizing text and positionong -->
         <div class="new-album">
           <p>ný hljómplata</p>
         </div>
       </div>
-
+      <!-- Container, flexbox -->
       <div class="bad-taste-container">
+        <!-- Class for stylizing different kind of text and positionong -->
         <div class="bad-taste">
           <p>Smekkleysa kynnir:</p>
         </div>
       </div>
-
+      <!-- Container for the large text at the bottom -->
       <section class="large-text-area">
         <h2>Tónleikar í Bæjarbíó</h2>
         <h3>Hafnarfirði, &nbsp;&nbsp; 28. &nbsp;&nbsp; og &nbsp;&nbsp; 29. &nbsp;&nbsp; ágúst.</h3>
+        <!-- Some extra classes for variaton of text and image -->
         <h3 class="special-guests">Sérstakir gestir: <img class="mum" title="múm" alt="múm's logo" src="images/mum-logo.png"></h3>
       </section>
 
     </main>
-
+    <!-- Footer container, style, flexbox -->
     <footer>
+      <!-- For left-alignmet -->
       <div class="left-footer">
         <p>fáanleg á geisladiski & jómfrúarvínil</p>
       </div>
+      <!-- For right-alignmet -->
       <div class="right-footer">
         <p>smekkleysa 2004</p>
       </div>
     </footer>
+    <!-- Wrapper for bottom-background image -->
     <div class="wrapper">
-    <img class="bottom-graphic" src="images/bottom.png"
+      <!-- Class for image positioning -->
+      <img class="bottom-graphic" src="images/bottom.png">
     </div>
   </body>
 </html>
